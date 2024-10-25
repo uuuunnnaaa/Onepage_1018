@@ -6,8 +6,8 @@
 }
 
 #nav{
-    display: grid;
-    grid-template-columns: 30% 50% 20%;
+    /* display: grid;
+    grid-template-columns: 30% 50% 20%; */
     width: 1200px;
     margin: 50px auto 100px;
     position: fixed;
@@ -16,6 +16,7 @@
     display: inline-block;
     text-align: center;
     padding-top: 10px;
+    padding-left: 50px;
 }
 
 .link{
@@ -35,6 +36,9 @@
 
 }
 
+#social{
+    text-align: right;
+}
 #social a{
     display: inline-block;
     text-align: center;
@@ -49,11 +53,63 @@
 
 .content{
     background-image:url(./img/paper.png) ;
-    height: 600px;
+    
 }
 .content h1{
     text-align: center;
     color: #555;
     padding: 20px 0;
     font-weight: bold;
+}
+
+/* News */
+/* #news{ */
+    /* 格線模式 */
+    /* display: grid; */
+    /* 格線模板欄位:重複設定(重複幾次，單位) */
+    /* 1fr 一格 */
+    /* grid-template-columns: repeat(3,1fr); */
+/* } */
+#news{
+    width: 100%;
+    padding: 30px;
+}
+.card{
+    padding: 20px 20px;
+    background: #ffffff;
+    border-radius: 5px;
+}
+.card img{
+    width: 100%;
+    padding: 15px;
+    opacity: 0.5;
+    transition: o.7s;
+}
+
+.card h2,h4,p{
+    text-align: center;
+}
+.card hr{
+    height: 2px;
+    background-color: #333;
+    margin-bottom: 10px;
+    width: 0;
+    transition: 0.7s;
+}
+.card h4{
+    color: aquamarine;
+    /* 文字間距 */
+    letter-spacing: 10px;
+}
+.card p{
+    height: 100px;
+    color: #666;
+    font-weight: 100;
+}
+/* 滑入卡片 */
+.card:hover hr{
+    width: 100%;
+}
+.card:hover img{
+    opacity: 1;
 }
