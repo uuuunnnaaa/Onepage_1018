@@ -121,3 +121,48 @@
 .card:hover img{
     opacity: 1;
 }
+
+
+/* product */
+#product{
+    height: 500px;
+    width: 800px;
+    margin: 0 auto;
+    
+    text-align: center;
+    position: relative;
+}
+#info{
+    position: absolute;
+    top: 60px;
+    right: 50px;
+    
+    width: 250px;
+}
+#info h2{
+    color: gold;
+    margin-bottom: 30px;
+    letter-spacing: 10px;
+}
+#info h6{
+    color: #666;
+    margin-bottom: 30px;
+    letter-spacing: 2px;
+}
+#info p{
+    text-align-last: left;
+    line-height: 2;
+}
+
+/* idea */
+#idea{
+    display: grid;
+    grid-template-columns: 50% 50%;
+    grid-gap: 30px;
+    width: 800px;
+    margin: 0 auto;
+}
+#idea-pic img{
+    width: 100%;
+    border: 8px solid #ffffff;
+}
